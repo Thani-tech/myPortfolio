@@ -519,7 +519,7 @@ body, .navbar, .project-card, .skills-list li, .back-to-top {
   .nav-links {
     gap: 16px;
   }
-  .theme{
+  .theme-toggle{
     display:none;
   }
   .nav-links a {
