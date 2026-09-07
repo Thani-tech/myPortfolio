@@ -519,6 +519,9 @@ body, .navbar, .project-card, .skills-list li, .back-to-top {
   .nav-links {
     gap: 16px;
   }
+  .theme{
+    display:none;
+  }
   .nav-links a {
     font-size: 13px;
   }
