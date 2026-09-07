@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Thani — Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,91 +20,122 @@
       <a href="#contact">Contact</a>
     </nav>
   </div>
+  <div class="theme">
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+    <span class="theme-icon sun">☀</span>
+    <span class="theme-icon moon">☾</span>
+    </button>
+  </div>
 </header>
 
 <main>
   <section id="top" class="hero">
     <div class="hero-inner">
-      <p class="eyebrow">Hi, I'm</p>
-      <h1>Thani</h1>
-      <p class="tagline">Turning ideas into working software</p>
+      <p class="eyebrow">Web Developer &mdash; Based on building, not talking</p>
+      <h1>Thani builds interfaces that <span class="rotator"><span id="rotatingWord">work</span></span>.</h1>
+      <p class="hero-sub">Turning ideas into working software — one real project at a time, in the open.</p>
+
       <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">See my work</a>
-        <a href="#contact" class="btn btn-outline">Get in touch</a>
+        <a href="#projects" class="btn btn-primary">View the work</a>
+        <a href="#contact" class="btn btn-outline">Start a project</a>
+      </div>
+
+      <div class="proof-strip">
+        <div class="proof-item">
+          <span class="proof-number">2</span>
+          <span class="proof-label">Projects in build</span>
+        </div>
+        <div class="proof-item">
+          <span class="proof-number">HTML · CSS</span>
+          <span class="proof-label">Core strengths</span>
+        </div>
+        <div class="proof-item">
+          <span class="proof-number">JS</span>
+          <span class="proof-label">Actively learning</span>
+        </div>
       </div>
     </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span></span>
+    </a>
   </section>
 
-  <section id="about" class="section">
+  <section id="about" class="section fade-section">
     <div class="section-inner">
       <span class="section-label">About</span>
-      <h2>Learning by building</h2>
+      <h2>Learning by building, in public.</h2>
       <p class="about-text">
-        I'm a developer with a solid foundation in HTML and CSS, currently building
-        my JavaScript skills through real projects. Rather than waiting until
-        everything is polished, I'm sharing my progress as I go — every project
-        below is a genuine step forward, not a finished showcase.
+        I have a solid foundation in HTML and CSS, and I'm actively building my
+        JavaScript skills through real work rather than tutorials alone. Every
+        project here is a genuine step in that process — shown as it actually
+        is, not dressed up to look finished before it is.
       </p>
     </div>
   </section>
 
-  <section id="projects" class="section section-alt">
+  <section id="projects" class="section section-alt fade-section">
     <div class="section-inner">
       <span class="section-label">Projects</span>
       <h2>What I'm working on</h2>
       <div class="project-grid">
 
-        <article class="project-card">
+        <article class="project-card" tabindex="0">
           <div class="project-status">In Progress · Layout Stage</div>
           <h3>Vocational Skills School</h3>
-          <p>
-            A website concept for a vocational business skills school —
-            currently at the homepage and layout stage, built with HTML and CSS.
+          <p class="project-summary">
+            A website concept for a vocational business skills school.
           </p>
+          <div class="project-details">
+            <p>Currently at the homepage and layout stage, built with HTML and CSS. Structure and content plan are in place ahead of adding interactivity.</p>
+          </div>
+          <span class="project-toggle">+ More detail</span>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" tabindex="0">
           <div class="project-status">In Progress · Layout Stage</div>
           <h3>LearnForce</h3>
-          <p>
-            A platform designed to encourage people to learn coding by helping
-            them keep track of their progress. Homepage and layout currently
-            in place, with interactive features planned next.
+          <p class="project-summary">
+            A platform to encourage people to learn coding by tracking progress.
           </p>
+          <div class="project-details">
+            <p>Homepage and layout are in place. Planned next: progress-tracking features and the interactive tools that give LearnForce its purpose.</p>
+          </div>
+          <span class="project-toggle">+ More detail</span>
         </article>
 
       </div>
     </div>
   </section>
 
-  <section id="skills" class="section">
+  <section id="skills" class="section fade-section">
     <div class="section-inner">
       <span class="section-label">Skills</span>
       <h2>Currently working with</h2>
       <ul class="skills-list">
         <li>HTML</li>
         <li>CSS</li>
-        <li>JavaScript <span class="tag">learning</span></li>
+        <li>JavaScript <span class="tag">AI</span></li>
         <li>Responsive Design</li>
-        <li>Git &amp; GitHub</li>
+        <li>Git &amp; GitHub <span class="tag">Learning</span></li>
       </ul>
     </div>
   </section>
 
-  <section id="contact" class="section section-alt">
+  <section id="contact" class="section section-alt fade-section">
     <div class="section-inner contact-inner">
       <span class="section-label">Contact</span>
-      <h2>Let's work together</h2>
-      <p>Have a project in mind or just want to connect? Reach out.</p>
+      <h2>Let's work together.</h2>
+      <p>Have a project in mind, or just want to connect? Reach out directly.</p>
       <a href="mailto:pelewurababatunde09@gmail.com" class="btn btn-primary">
-        pelewurababatunde09@gmail.com
+        buildwithsolo@gmail.com
       </a>
     </div>
   </section>
 </main>
 
 <footer class="footer">
-  <p>&copy; <span id="year"></span> Thani. Built with HTML, CSS &amp; JavaScript.</p>
+  <p>&copy; <span id="year"></span> SoloTech. Built with HTML, CSS &amp; JavaScript.</p>
 </footer>
 
 <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
